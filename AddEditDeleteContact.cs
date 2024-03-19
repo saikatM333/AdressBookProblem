@@ -40,8 +40,63 @@ namespace AddresBook
 
         { // logic for the editing the user data 
 
-           
-            
+            Console.WriteLine("enter your firstname ");
+            string firstname = Console.ReadLine();
+            Console.WriteLine("Enter the lastname");
+            string lastname = Console.ReadLine();
+            Boolean flag = true;
+            while (flag)
+            {
+                Console.WriteLine("enter 1 for changing the firstname\nenter 2 change the lastname\n enter 3 for changing the email\nenter 4 to change the address\nenter the 5 for changing the city\nenter the 6 for changing the state\nenter 7 for changing the zip\n enter 8 for changing phone");
+                int choice = Convert.ToInt32(Console.ReadLine());
+                foreach (Contactdetails contact in ContactList)
+                {
+                    if (contact.firstName.Equals(firstname) && contact.lastName.Equals(lastname))
+                    {
+                        switch (choice)
+                        {
+                            case 1:
+                                Console.WriteLine("enter to update the firstname ");
+                                contact.firstName = Console.ReadLine();
+                                break;
+                            case 2:
+                                Console.WriteLine("enter to update the ");
+                                contact.firstName = Console.ReadLine();
+                                break;
+                            case 3:
+                                Console.WriteLine("enter to update the ");
+                                contact.firstName = Console.ReadLine();
+                                break;
+                            case 4:
+                                Console.WriteLine("enter to update the ");
+                                contact.firstName = Console.ReadLine(); ;
+                                break;
+                            case 5:
+                                Console.WriteLine("enter to update the ");
+                                contact.firstName = Console.ReadLine();
+                                break;
+                            case 6:
+                                Console.WriteLine("enter to update the ");
+                                contact.firstName = Console.ReadLine();
+                                break;
+                            case 7:
+                                Console.WriteLine("enter to update the ");
+                                contact.firstName = Console.ReadLine(); ;
+                                break;
+                            case 8:
+                                Console.WriteLine("enter to update the ");
+                                contact.firstName = Console.ReadLine();
+                                break;
+                            default:
+                                flag = false;
+                                break;
+                        }
+                    }
+                }
+            }
+
+
+
 
         }
 
